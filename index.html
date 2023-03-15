@@ -1,1 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huda Basar</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://kit.fontawesome.com/55ca8b5e75.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header"> Home</a></li>
+                    <li><a href="#about"> About</a></li>
+                    <li><a href="#skills"> Skills</a></li>
+                    <li><a href="#Projects"> Projects</a></li>
+                    <li><a href="#contact"> Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                
+            </nav>
+            <div class="header-text">
+              <p>Full Stack Developer</p>  
+              <h1> Hi, I am <span>Huda Basar</span></h1>
+            </div>
+        </div>
 
+    </div>
+
+    <!-- ABOUT Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+               <div class="about-col-1">
+                <img src="images/profile.png">
+               </div>
+               <div class="about-col-2">
+                <h1 class="subtitle">About Me</h1>
+                <p class="intro"> An aspiring professional Software Developer with an indept knowlege in front-end development and back-end development and a recent Certificate in Full Stack Developer from SAIT
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')"> Skills</p>
+                    <p class="tab-links" onclick="opentab('Education')"> Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>Front End Development</span><br>HTML/CSS/ JavaScript/ReactJs</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2023</span><br>Full Stack Developer</li>
+                        <li><span>2022</span><br>Post-Graduate Diploma in Cloud Computing</li>
+                        <li><span>2012-2013</span><br>Post-Graduate Diploma in International Marketing</li>
+                    </ul>
+                </div>
+               </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJECTS Section -->
+
+    <div id="Projects">
+        <div class="container">
+            <h1 class="subtitle">Projects:My Work</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-html5"></i>
+                    <h2>HTML</h2>
+                    <p>Developed codes for my RESUME File in a well- structured HTML webpage</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h2>CSS</h2>
+                    <p>Developed codes for my RESUME File in a well- styled CSS webpage</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-js"></i>
+                    <h2>JavaScript</h2>
+                    <p>Developed JS codes for a full functioning and responsive Dog's DayCare website</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACT Page -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class=" subtitle">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i>contact@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-phone"></i>xxx-xxx-0000</p>
+                    <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="" class="btn btn1">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="name" placeholder="Your Name" required> 
+                        <input type="text" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="sumbit" class="btn btn1">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright Huda. Made with <i><i class="fa-solid fa-heart"></i></i></p>
+            </div>
+    </div>
+    <script src="/scripts /script.js"></script>
+</body>
+</html>
